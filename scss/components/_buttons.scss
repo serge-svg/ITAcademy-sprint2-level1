@@ -1,0 +1,16 @@
+@use 'colors';
+
+.header-button {
+    background-color: colors.$orange;
+    color: colors.$grey;
+    
+    text-decoration: none;
+    text-align: center;
+    
+    line-height: 50px;
+
+    width: 150px;
+    height: 50px;
+
+    font-weight: 500;
+}
