@@ -1,9 +1,6 @@
-@use 'colors';
+@import 'colors';
 
-.header-button {
-    background-color: colors.$orange;
-    color: colors.$grey;
-    
+.buttons {
     text-decoration: none;
     text-align: center;
     
@@ -13,4 +10,25 @@
     height: 50px;
 
     font-weight: 500;
+
+    border-radius: 5%;
+    padding: auto;
+
 }
+
+.orange-button {
+    /*background-color: map-get($button-colors, orange);*/
+    background-color: $orange;
+    color: $white;        
+}
+
+.blue-button {
+    background-color: $blue;
+    color: $grey;
+}
+
+.grey-button {
+    background-color: $grey;
+    color: $dark-grey;
+}
+
