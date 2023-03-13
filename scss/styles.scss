@@ -3,7 +3,6 @@
 @import 'components/buttons';
 @import 'components/nesting';
 
-
 * {
     margin: 0;
     padding: 0;
@@ -50,13 +49,10 @@ header {
     font-size: 17px;
 }
 
-
-
 .main-image { 
-    width: 600px;
-    height: auto;
+    width: auto;
+    height: 400px;
  }
-
 
 main {
     display: flex;
@@ -85,4 +81,30 @@ main {
     display: flex;
     justify-content: flex-start;
     gap: 2vh;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 5vh 10vh 5vh 10vh;    
+}
+
+.features h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features p {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.features-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }

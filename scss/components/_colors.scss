@@ -1,9 +1,4 @@
 $white: white;
-$orange: #fa5757;
-$blue: #5165dc;
-$dark-blue: #242946;
-$grey: #ced0db;
-$dark-grey: #514D67;
 $ligth-grey: #f8f8f8;
 
 $bg-white: #ffffff;
@@ -12,5 +7,15 @@ $bg-blue: #5266df;
 $button-colors: (
     "orange": #fa5757,
     "blue": #5165dc,
-    "grey": #f5f5f6
+    "dark-blue": #242946,    
+    "grey": #ced0db,
+    "dark-grey": #514D67
 );
+
+
+/*
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.get($font-weights, "medium"); // 500
+@debug map.get($font-weights, "extra-bold"); // null
+*/

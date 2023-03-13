@@ -16,19 +16,17 @@
 
 }
 
-.orange-button {
-    /*background-color: map-get($button-colors, orange);*/
-    background-color: $orange;
+.orange-button {    
+    background-color: map-get($button-colors, "orange");
     color: $white;        
 }
 
 .blue-button {
-    background-color: $blue;
-    color: $grey;
-}
+    background-color: map-get($button-colors, "blue");
+    color: map-get($button-colors, "grey");}
 
 .grey-button {
-    background-color: $grey;
-    color: $dark-grey;
+    background-color: map-get($button-colors, "grey");
+    color: map-get($button-colors, "dark-grey");
 }
 

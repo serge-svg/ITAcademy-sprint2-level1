@@ -32,6 +32,18 @@ h4 {
   line-height: 150%;
 }
 
+/*
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.get($font-weights, "medium"); // 500
+@debug map.get($font-weights, "extra-bold"); // null
+*/
+/*
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.get($font-weights, "medium"); // 500
+@debug map.get($font-weights, "extra-bold"); // null
+*/
 .buttons {
   text-decoration: none;
   text-align: center;
@@ -44,7 +56,6 @@ h4 {
 }
 
 .orange-button {
-  /*background-color: map-get($button-colors, orange);*/
   background-color: #fa5757;
   color: white;
 }
@@ -102,8 +113,8 @@ header {
 }
 
 .main-image {
-  width: 600px;
-  height: auto;
+  width: auto;
+  height: 400px;
 }
 
 main {
@@ -132,4 +143,23 @@ main {
   display: flex;
   justify-content: flex-start;
   gap: 2vh;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5vh 10vh 5vh 10vh;
+}
+
+.features h2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }/*# sourceMappingURL=styles.css.map */
