@@ -1,7 +1,2 @@
 $title: 'Bookmark';
 $author: 'SergiVG';
-
-body {
-    @debug $author;
-    @debug type-of($author);
-}

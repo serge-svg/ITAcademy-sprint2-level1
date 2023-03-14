@@ -1,3 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.body-regular {
+  color: #514D67;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+/*
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.get($font-weights, "medium"); // 500
+@debug map.get($font-weights, "extra-bold"); // null
+*/
+/*
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.get($font-weights, "medium"); // 500
+@debug map.get($font-weights, "extra-bold"); // null
+*/
+.buttons {
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  width: 150px;
+  height: 50px;
+  font-weight: 500;
+  border-radius: 5%;
+  padding: auto;
+}
+
+.orange-button {
+  background-color: #fa5757;
+  color: white;
+}
+
+.blue-button {
+  background-color: #5165dc;
+  color: #ced0db;
+}
+
+.grey-button {
+  background-color: #ced0db;
+  color: #514D67;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,39 +81,19 @@
   height: 20px;
 }
 
-/*
-header {
-    background-color: $bg-body;
-    width: 80%;
-    margin: 1rem auto;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-
-        li { 
-          display: flex;
-          list-style-type: none;    
-          gap: 1rem;
-        }
-
-        a {
-          text-decoration: none;
-        }
-    }
-}
-*/
 header {
   background-color: #ffffff;
-  width: 80%;
-  margin: 1rem auto;
+  width: 100%;
+  padding: 5vh 10vh 5vh 10vh;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vh;
 }
 
 .nav-list {
@@ -60,18 +112,60 @@ header {
   font-size: 17px;
 }
 
-.orange-button {
-  /*background-color: map-get($button-colors, orange);*/
-  background-color: #fa5757;
-  color: white;
-  border-radius: 5%;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  width: 150px;
-  height: 50px;
+.main-image {
+  width: auto;
+  height: 400px;
 }
 
-.main-image {
-  width: 300px;
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5vh 10vh 5vh 10vh;
+}
+
+.main-left,
+.main-right {
+  display: flex;
+  width: 50%;
+}
+
+.main-left {
+  flex-direction: column;
+  padding: 15vh;
+}
+
+.main-right {
+  justify-content: center;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vh;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5vh 10vh 5vh 10vh;
+}
+
+.features h2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features p {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.features-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }/*# sourceMappingURL=styles.css.map */
