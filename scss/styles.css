@@ -158,6 +158,12 @@ main {
   justify-content: space-around;
 }
 
+.features p {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
 .features-links {
   display: flex;
   justify-content: space-around;
